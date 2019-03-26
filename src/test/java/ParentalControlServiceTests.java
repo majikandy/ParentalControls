@@ -10,14 +10,14 @@ public class ParentalControlServiceTests {
     @Test
     public void when_movie_PG_and_customer_level_is_PG_then_customer_CAN_watch_movie(){
         given_movie_level_is("PG");
-        when_requesting_if_movie_allowed_for(ParentalControlLevel.PG);
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.PG);
         then_movie_CAN_be_watched();
     }
 
     @Test
     public void when_movie_PG_and_customer_level_is_U_then_customer_CANNOT_watch_movie(){
         given_movie_level_is("PG");
-        when_requesting_if_movie_allowed_for(ParentalControlLevel.U);
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.U);
         then_movie_CANNOT_be_watched();
         and_reason_is(Reason.ParentalControlLevel);
     }
@@ -25,15 +25,23 @@ public class ParentalControlServiceTests {
     @Test
     public void when_movie_U_and_customer_level_is_U_then_customer_CAN_watch_movie(){
         given_movie_level_is("U");
-        when_requesting_if_movie_allowed_for(ParentalControlLevel.U);
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.U);
         then_movie_CAN_be_watched();
     }
 
     @Test
     public void when_movie_U_and_customer_level_is_PG_then_customer_CAN_watch_movie(){
         given_movie_level_is("U");
-        when_requesting_if_movie_allowed_for(ParentalControlLevel.U);
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.PG);
         then_movie_CAN_be_watched();
+    }
+
+    @Test
+    public void when_movie_12_and_customer_level_is_PG_then_customer_CANNOT_watch_movie(){
+        given_movie_level_is("12");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.PG);
+        then_movie_CANNOT_be_watched();
+        and_reason_is(Reason.ParentalControlLevel);
     }
 
     @Test
@@ -42,7 +50,7 @@ public class ParentalControlServiceTests {
         // In reality, I would expect this to be decision to be closer to the end client call rather than wrapped here - but the spec really leads us this way
         // Also worth noting that although this is a contrived example, should a movie service really be throwing a TechnicalFailureException, it sounds far too generic
         given_movie_level_has_system_error();
-        when_requesting_if_movie_allowed_for(ParentalControlLevel.U);
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.U);
         then_movie_CANNOT_be_watched();
         and_reason_is(Reason.TechnicalFailure);
         // NOTE: We should have the code raise an event in the code if we are choosing to catch and wrap
@@ -53,14 +61,14 @@ public class ParentalControlServiceTests {
     @Test
     public void when_movie_service_cannot_find_the_movie_then_the_exception_bubbles_up(){
         given_movie_cannot_be_found();
-        when_requesting_if_movie_allowed_for(ParentalControlLevel.U);
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.U);
         then_title_not_found_exception_is_bubbled_up();
     }
 
     @Test
     public void when_movie_service_returns_unknown_parental_control_level(){
         given_movie_level_is("something unknown");
-        when_requesting_if_movie_allowed_for(ParentalControlLevel.U);
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.U);
         then_illegal_argument_exception_is_bubbled_up();
         // reason being here that it is probably isn't the right place to catch all exceptions for logging/alerting -
         // I would expect that to be closer to the top level client call
@@ -101,7 +109,7 @@ public class ParentalControlServiceTests {
         });
     }
 
-    private void when_requesting_if_movie_allowed_for(ParentalControlLevel parentalControlLevel) {
+    private void when_requesting_if_movie_allowed_for(ParentalControlLevelEnum parentalControlLevel) {
         try {
             result = parentalControlService.IsMovieWatchable(parentalControlLevel, "any_movie_id");
         } catch (Exception e)
