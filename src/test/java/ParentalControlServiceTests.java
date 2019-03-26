@@ -1,3 +1,7 @@
+import andrewdavis.MovieService;
+import andrewdavis.ParentalControlLevel;
+import andrewdavis.ParentalControlService;
+import andrewdavis.ParentalControlServiceImpl;
 import org.junit.jupiter.api.Test;
 
 public class ParentalControlServiceTests {
@@ -6,7 +10,7 @@ public class ParentalControlServiceTests {
     private boolean result;
 
     @Test
-    public void when_movie_PG_and_customer_level_is_PG_then_customer_can_watch_movie(){
+    public void when_movie_PG_and_customer_level_is_PG_then_customer_CAN_watch_movie(){
         given_movie_level_is("PG");
         when_requesting_if_movie_allowed_for(ParentalControlLevel.PG);
         movie_CAN_be_watched();
