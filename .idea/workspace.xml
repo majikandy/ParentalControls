@@ -15,8 +15,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlLevel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="60">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/Reason.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -24,10 +33,42 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ParentalControlServiceTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+            <state relative-caret-position="85">
+              <caret line="66" column="8" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3322#3516#0" expanded="true" />
+                <element signature="e#3515#3516#0" expanded="true" />
+                <element signature="e#3646#3846#0" expanded="true" />
+                <element signature="e#3845#3846#0" expanded="true" />
+                <element signature="e#5105#5106#0" expanded="true" />
+                <element signature="e#5208#5209#0" expanded="true" />
+                <element signature="e#5308#5309#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/MovieWatchableResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+              <folding>
+                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#481#482#0" expanded="true" />
+                <element signature="e#543#544#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#673#674#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,10 +84,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/MovieService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="345">
+              <caret line="23" column="52" lean-forward="true" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
               <folding>
                 <element signature="e#203#204#0" expanded="true" />
                 <element signature="e#251#252#0" expanded="true" />
@@ -93,9 +143,12 @@
         <option value="$PROJECT_DIR$/src/main/java/ParentalControlServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/TitleNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/andrewdavis/MovieService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlService.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlLevel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andrewdavis/MovieUnwatchableReason.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andrewdavis/Reason.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andrewdavis/MovieWatchableResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/ParentalControlServiceTests.java" />
       </list>
@@ -166,6 +219,11 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="andrewdavis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andrewdavis" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -188,18 +246,22 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553620250627" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553638312668" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="andrewdavis" />
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="andrewdavis" />
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="andrewdavis" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test" />
@@ -228,31 +290,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParentalControlServiceTests (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="andrewdavis" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ParentalControlServiceTests" />
-      <option name="TEST_OBJECT" value="uniqueId" />
-      <uniqueIds>
-        <uniqueId value="[engine:junit-jupiter]/[class:ParentalControlServiceTests]" />
-      </uniqueIds>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParentalControlServiceTests (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="andrewdavis" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ParentalControlServiceTests" />
-      <option name="TEST_OBJECT" value="uniqueId" />
-      <uniqueIds>
-        <uniqueId value="[engine:junit-jupiter]/[class:ParentalControlServiceTests]" />
-      </uniqueIds>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParentalControlServiceTests (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParentalControlServiceTests (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="andrewdavis" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ParentalControlServiceTests" />
@@ -276,13 +314,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ParentalControlServiceTests.when_movie_service_cannot_find_the_movie_then_the_exception_bubbles_up" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="andrewdavis" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ParentalControlServiceTests" />
+      <option name="METHOD_NAME" value="when_movie_service_cannot_find_the_movie_then_the_exception_bubbles_up" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParentalControlServiceTests.when_movie_service_has_unknown_parentalcontrol_level_indicate_unwatchable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="andrewdavis" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ParentalControlServiceTests" />
+      <option name="METHOD_NAME" value="when_movie_service_has_unknown_parentalcontrol_level_indicate_unwatchable" />
+      <option name="TEST_OBJECT" value="method" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:ParentalControlServiceTests]" />
+      </uniqueIds>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ParentalControlServiceTests (1)" />
-        <item itemvalue="JUnit.ParentalControlServiceTests (5)" />
-        <item itemvalue="JUnit.ParentalControlServiceTests (4)" />
-        <item itemvalue="JUnit.ParentalControlServiceTests (3)" />
         <item itemvalue="JUnit.ParentalControlServiceTests" />
+        <item itemvalue="JUnit.ParentalControlServiceTests.when_movie_service_cannot_find_the_movie_then_the_exception_bubbles_up" />
+        <item itemvalue="JUnit.ParentalControlServiceTests.when_movie_service_has_unknown_parentalcontrol_level_indicate_unwatchable" />
+        <item itemvalue="JUnit.ParentalControlServiceTests (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -297,40 +358,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ParentalControlServiceTests_when_movie_PG_and_customer_level_is_PG_then_customer_can_watch_movie - 2019.03.26 at 16h 23m 25s.xml">
-      <configuration name="ParentalControlServiceTests.when_movie_PG_and_customer_level_is_PG_then_customer_can_watch_movie" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParentalControlServiceTests_when_movie_PG_and_customer_level_is_U_then_customer_CANNOT_watch_movie - 2019.03.26 at 16h 52m 16s.xml">
-      <configuration name="ParentalControlServiceTests.when_movie_PG_and_customer_level_is_U_then_customer_CANNOT_watch_movie" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParentalControlServiceTests_when_movie_PG_and_customer_level_is_PG_then_customer_CAN_watch_movie - 2019.03.26 at 16h 52m 27s.xml">
-      <configuration name="ParentalControlServiceTests.when_movie_PG_and_customer_level_is_PG_then_customer_CAN_watch_movie" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParentalControlServiceTests_(1) - 2019.03.26 at 16h 52m 32s.xml">
-      <configuration name="ParentalControlServiceTests (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParentalControlServiceTests_(2) - 2019.03.26 at 16h 54m 43s.xml">
+    <history-entry file="ParentalControlServiceTests_(2) - 2019.03.26 at 21h 02m 55s.xml">
       <configuration name="ParentalControlServiceTests (2)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParentalControlServiceTests_(1) - 2019.03.26 at 16h 58m 55s.xml">
+    <history-entry file="ParentalControlServiceTests_when_movie_service_has_unknown_parentalcontrol_level_indicate_unwatchable - 2019.03.26 at 21h 07m 10s.xml">
+      <configuration name="ParentalControlServiceTests.when_movie_service_has_unknown_parentalcontrol_level_indicate_unwatchable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParentalControlServiceTests_(1) - 2019.03.26 at 21h 34m 34s.xml">
       <configuration name="ParentalControlServiceTests (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParentalControlServiceTests - 2019.03.26 at 17h 01m 10s.xml">
+    <history-entry file="ParentalControlServiceTests_(1) - 2019.03.26 at 21h 48m 58s.xml">
+      <configuration name="ParentalControlServiceTests (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParentalControlServiceTests_when_movie_service_cannot_find_the_movie_then_the_exception_bubbles_up - 2019.03.26 at 21h 51m 08s.xml">
+      <configuration name="ParentalControlServiceTests.when_movie_service_cannot_find_the_movie_then_the_exception_bubbles_up" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParentalControlServiceTests_when_movie_service_cannot_find_the_movie_then_the_exception_bubbles_up - 2019.03.26 at 21h 52m 26s.xml">
+      <configuration name="ParentalControlServiceTests.when_movie_service_cannot_find_the_movie_then_the_exception_bubbles_up" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParentalControlServiceTests_when_movie_service_cannot_find_the_movie_then_the_exception_bubbles_up - 2019.03.26 at 21h 52m 39s.xml">
+      <configuration name="ParentalControlServiceTests.when_movie_service_cannot_find_the_movie_then_the_exception_bubbles_up" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParentalControlServiceTests_(1) - 2019.03.26 at 21h 52m 50s.xml">
+      <configuration name="ParentalControlServiceTests (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParentalControlServiceTests - 2019.03.26 at 22h 00m 33s.xml">
       <configuration name="ParentalControlServiceTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParentalControlServiceTests_(3) - 2019.03.26 at 17h 02m 43s.xml">
-      <configuration name="ParentalControlServiceTests (3)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParentalControlServiceTests_(4) - 2019.03.26 at 17h 07m 13s.xml">
-      <configuration name="ParentalControlServiceTests (4)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParentalControlServiceTests_(5) - 2019.03.26 at 17h 07m 52s.xml">
-      <configuration name="ParentalControlServiceTests (5)" configurationId="JUnit" />
+    <history-entry file="ParentalControlServiceTests - 2019.03.26 at 22h 05m 53s.xml">
+      <configuration name="ParentalControlServiceTests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="958" y="236" width="1400" height="1000" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />
@@ -338,16 +398,16 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496318" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32929516" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32929516" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49779087" weight="0.32929516" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.28424153" side_tool="true" visible="true" weight="0.32929516" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.48821798" weight="0.32929516" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32929516" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.71575844" visible="true" weight="0.32929516" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49852726" weight="0.39977974" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -360,6 +420,18 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ParentalControlServiceTests.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -404,13 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/MovieService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -418,21 +483,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/Reason.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlLevel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        <state relative-caret-position="60">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/MovieService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="345">
+          <caret line="23" column="52" lean-forward="true" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
           <folding>
             <element signature="e#203#204#0" expanded="true" />
             <element signature="e#251#252#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/MovieWatchableResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
@@ -445,10 +545,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ParentalControlServiceTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+        <state relative-caret-position="85">
+          <caret line="66" column="8" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3322#3516#0" expanded="true" />
+            <element signature="e#3515#3516#0" expanded="true" />
+            <element signature="e#3646#3846#0" expanded="true" />
+            <element signature="e#3845#3846#0" expanded="true" />
+            <element signature="e#5105#5106#0" expanded="true" />
+            <element signature="e#5208#5209#0" expanded="true" />
+            <element signature="e#5308#5309#0" expanded="true" />
           </folding>
         </state>
       </provider>

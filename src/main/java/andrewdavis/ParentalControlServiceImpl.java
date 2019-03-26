@@ -7,25 +7,23 @@ public class ParentalControlServiceImpl implements ParentalControlService {
         this.movieService = movieService;
     }
 
-    public boolean IsAllowed(ParentalControlLevel customerParentalControlLevelPreference, String movieId) {
+    public MovieWatchableResult IsMovieWatchable(ParentalControlLevel customerParentalControlLevelPreference, String movieId) throws MovieService.TitleNotFoundException {
         try {
             String movieParentalControlLevel = this.movieService.getParentalControlLevel(movieId);
 
+            ParentalControlLevel level = ParentalControlLevel.valueOf(movieParentalControlLevel);
+
             if (movieParentalControlLevel == "U") {
-                return true;
+                return MovieWatchableResult.Watchable();
             }
 
             if (customerParentalControlLevelPreference == ParentalControlLevel.U) {
-                return false;
+                return MovieWatchableResult.UnWatchable(Reason.ParentalControlLevel);
             }
 
-            return true;
-        } catch (MovieService.TitleNotFoundException e) {
-            e.printStackTrace();
+            return MovieWatchableResult.Watchable();
         } catch (MovieService.TechnicalFailureException e) {
-            e.printStackTrace();
+            return MovieWatchableResult.UnWatchable(Reason.TechnicalFailure);
         }
-
-        return false;
     }
 }

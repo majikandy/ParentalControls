@@ -1,6 +1,6 @@
 package andrewdavis;
 
 public interface ParentalControlService {
-    boolean IsAllowed(ParentalControlLevel customerParentalControlLevelPreference, String movieId);
+    MovieWatchableResult IsMovieWatchable(ParentalControlLevel customerParentalControlLevelPreference, String movieId) throws MovieService.TitleNotFoundException;
 }
 
