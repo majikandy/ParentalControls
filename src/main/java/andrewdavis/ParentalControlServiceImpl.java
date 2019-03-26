@@ -8,10 +8,24 @@ public class ParentalControlServiceImpl implements ParentalControlService {
     }
 
     public boolean IsAllowed(ParentalControlLevel customerParentalControlLevelPreference, String movieId) {
-        if (customerParentalControlLevelPreference == ParentalControlLevel.U) {
-            return false;
+        try {
+            String movieParentalControlLevel = this.movieService.getParentalControlLevel(movieId);
+
+            if (movieParentalControlLevel == "U") {
+                return true;
+            }
+
+            if (customerParentalControlLevelPreference == ParentalControlLevel.U) {
+                return false;
+            }
+
+            return true;
+        } catch (MovieService.TitleNotFoundException e) {
+            e.printStackTrace();
+        } catch (MovieService.TechnicalFailureException e) {
+            e.printStackTrace();
         }
 
-        return true;
+        return false;
     }
 }
