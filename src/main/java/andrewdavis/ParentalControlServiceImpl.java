@@ -8,6 +8,10 @@ public class ParentalControlServiceImpl implements ParentalControlService {
     }
 
     public boolean IsAllowed(ParentalControlLevel customerParentalControlLevelPreference, String movieId) {
+        if (customerParentalControlLevelPreference == ParentalControlLevel.U) {
+            return false;
+        }
+
         return true;
     }
 }
