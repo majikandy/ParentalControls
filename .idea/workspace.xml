@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlLevelEnum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="45">
+              <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
               <folding>
                 <element signature="e#159#160#0" expanded="true" />
                 <element signature="e#195#196#0" expanded="true" />
@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ParentalControlServiceTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="113" selection-start-line="113" selection-end-line="113" />
+            <state relative-caret-position="1487">
+              <caret line="121" column="25" lean-forward="true" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4158#4352#0" expanded="true" />
@@ -49,15 +49,6 @@
                 <element signature="e#5550#5551#0" expanded="true" />
                 <element signature="e#5650#5651#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
@@ -96,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#203#204#0" expanded="true" />
                 <element signature="e#251#252#0" expanded="true" />
@@ -153,9 +144,9 @@
         <option value="$PROJECT_DIR$/src/main/java/andrewdavis/Reason.java" />
         <option value="$PROJECT_DIR$/src/main/java/andrewdavis/MovieWatchableResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlLevel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlLevelEnum.java" />
         <option value="$PROJECT_DIR$/src/test/java/ParentalControlServiceTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlLevelEnum.java" />
       </list>
     </option>
   </component>
@@ -251,7 +242,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553640408026" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553640468869" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -363,9 +354,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ParentalControlServiceTests_(1) - 2019.03.26 at 22h 38m 52s.xml">
-      <configuration name="ParentalControlServiceTests (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ParentalControlServiceTests - 2019.03.26 at 22h 40m 08s.xml">
       <configuration name="ParentalControlServiceTests" configurationId="JUnit" />
     </history-entry>
@@ -393,6 +381,9 @@
     <history-entry file="ParentalControlServiceTests_when_movie_PG_and_customer_level_is_U_then_customer_CANNOT_watch_movie - 2019.03.26 at 22h 46m 26s.xml">
       <configuration name="ParentalControlServiceTests.when_movie_PG_and_customer_level_is_U_then_customer_CANNOT_watch_movie" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ParentalControlServiceTests_(1) - 2019.03.26 at 22h 47m 53s.xml">
+      <configuration name="ParentalControlServiceTests (1)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="958" y="236" width="1400" height="1000" extended-state="0" />
@@ -407,13 +398,13 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.4970545" weight="0.32929516" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5036819" side_tool="true" visible="true" weight="0.39977974" />
-      <window_info anchor="bottom" id="Messages" sideWeight="0.48232695" weight="0.32929516" />
+      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.4963181" visible="true" weight="0.32929516" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.5036819" side_tool="true" visible="true" weight="0.32929516" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.48159057" weight="0.32929516" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.70913106" weight="0.32929516" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4963181" visible="true" weight="0.39977974" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7083947" weight="0.32929516" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4963181" weight="0.39977974" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -519,28 +510,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlLevelEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="e#159#160#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/Reason.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
@@ -565,10 +538,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ParentalControlServiceTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        <state relative-caret-position="1487">
+          <caret line="121" column="25" lean-forward="true" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4158#4352#0" expanded="true" />
@@ -582,13 +573,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/andrewdavis/ParentalControlLevelEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+        <state relative-caret-position="45">
+          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding>
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,13 +1,13 @@
 package andrewdavis;
 
 public enum ParentalControlLevelEnum {
-    U ("U", 1),
-    PG ("PG", 2),
-    Twelve ("12", 3);
+    U ("U"),
+    PG ("PG"),
+    Twelve ("12");
 
     private String rating;
 
-    ParentalControlLevelEnum(String rating, int comparison) {
+    ParentalControlLevelEnum(String rating) {
         this.rating = rating;
     }
 
