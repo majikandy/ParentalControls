@@ -30,6 +30,13 @@ public class ParentalControlServiceTests {
         movie_CAN_be_watched();
     }
 
+    @Test
+    public void when_movie_U_and_customer_level_is_PG_then_customer_CAN_watch_movie(){
+        given_movie_level_is("U");
+        when_requesting_if_movie_allowed_for(ParentalControlLevel.U);
+        movie_CAN_be_watched();
+    }
+
     private void given_movie_level_is(final String movieParentalControlLevel) {
         parentalControlService = new ParentalControlServiceImpl(new MovieService() {
             public String getParentalControlLevel(String movieId) {
