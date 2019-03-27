@@ -192,16 +192,26 @@ public class ParentalControlServiceTests {
         then_movie_CAN_be_watched();
     }
 
+
+    /* NOTE: comments only in the below Tests for purposes of this Technical Test.
+
+       Problems are usually better dealt with by communication, and the design decision demonstrated in the code
+       (or recorded on the board for planning and prioritising if a bigger change needed) rather than littering comments.
+
+       However other than an email, which could get lost by the recruiter, this is the easiest way to express intention for this test. */
+
     @Test
-    public void when_movie_service_has_system_error_details_are_hidden_from_the_user_just_indicates_they_cannot_watch_it_for_technical_reasons(){
-        // NOTE: I'm not sure I agree with this requirement, I would debate the pros and cons of this
-        // In reality, I would expect this to be decision to be closer to the end client call rather than wrapped here - but the spec really leads us this way
-        // Also worth noting that although this is a contrived example, should a movie service really be throwing a TechnicalFailureException, it sounds far too generic
+    public void when_movie_service_has_system_error_details_are_hidden_and_it_just_indicates_they_cannot_watch_it_for_technical_reasons(){
         given_movie_level_has_system_error();
         when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.U);
         then_movie_CANNOT_be_watched();
         and_reason_is(Reason.TechnicalFailure);
-        // NOTE: We should have the code raise an event in the code if we are choosing to catch and wrap
+
+        // NOTE: I'm not sure I agree with this requirement, I would debate the pros and cons of this
+        // In reality, I would expect this to be decision to be closer to the end client call rather than wrapped here - but the spec really leads us this way
+        // Also worth noting that although this is a contrived example, should a movie service really be throwing a TechnicalFailureException, it sounds far too generic
+
+        // NOTE: We should have the code raise an event in the code if we are choosing to catch and wrap - furthermore maybe MovieService responsibility.
         // so that it can be handled to fix the underlying cause of the problem
     }
 
@@ -210,6 +220,11 @@ public class ParentalControlServiceTests {
         given_movie_cannot_be_found();
         when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.U);
         then_title_not_found_exception_is_bubbled_up();
+
+        // The reason here is that this layer cannot add any more value to this particular exception.
+        // It could be converted to a result with reason: TitleNotFound,
+        // but if the decision is that TitleNotFound is Exceptional at the MovieService
+        // then this layer wrapping that exception, adds nothing.
     }
 
     @Test
@@ -217,19 +232,12 @@ public class ParentalControlServiceTests {
         given_movie_level_is("something unknown");
         when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.U);
         then_illegal_argument_exception_is_bubbled_up();
-        // reason being here that it is probably isn't the right place to catch all exceptions for logging/alerting -
+
+        // The reason here for this design that it is probably isn't the right place to catch all exceptions for logging/alerting -
         // I would expect that to be closer to the top level client call
-        // the "we need to ensure that we are always failsafe" requirement is great, but that doesn't mean classes should catch
-        // all exceptions and hide all error details, better that it breaks and gets fixed
+        // the "we need to ensure that we are always failsafe" requirement is great, but that doesn't mean all classes should catch
+        // all exceptions and hide all error details, better that it bubble up the real error and gets fixed
         // OR in this case, even better that the MovieService doesn't use a string for the parental control level
-    }
-
-    private void then_illegal_argument_exception_is_bubbled_up() {
-        assert this.caughtException instanceof IllegalArgumentException;
-    }
-
-    private void then_title_not_found_exception_is_bubbled_up() {
-        assert this.caughtException instanceof MovieService.TitleNotFoundException;
     }
 
     private void given_movie_cannot_be_found() {
@@ -275,5 +283,13 @@ public class ParentalControlServiceTests {
 
     private void and_reason_is(Reason reason) {
         assert result.getReason() == reason;
+    }
+
+    private void then_illegal_argument_exception_is_bubbled_up() {
+        assert this.caughtException instanceof IllegalArgumentException;
+    }
+
+    private void then_title_not_found_exception_is_bubbled_up() {
+        assert this.caughtException instanceof MovieService.TitleNotFoundException;
     }
 }
