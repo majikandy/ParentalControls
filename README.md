@@ -30,9 +30,9 @@ The following table describes the expected ParentalControlService result
 | Technical failure exception | System Error                                     | Indicate that the customer cannot watch this movie                                                                                                           | Wrap this one as a Result with Watchable: false  and a reason of Technical Failure. - Assume that alerting / logging taken care of  in the Movie Service implementation. Requirement suggests it should not bubble up  but I think this decision would be a point of  discussion as to the best thing to do here.  Also Technical Failure Exception is a bit contrived  so definitely one to discuss. |
 
 
-We need to ensure that we always failsafe.
+**Specified Requirement:** We need to ensure that we always failsafe.
 
 **ParentalControlService Design Decision:** This service probably isn't the right place to catch all exceptions for logging/alerting -
 I would expect that to be closer to the top level client call and prefer all other Exceptions to bubble up.
-the requirement is great, but that doesn't mean all classes should catch all exceptions and hide all error details,
-better that it bubble up the real error and gets fixed OR fix certain flaws like primative abuse; e.g. MovieService uses a string for the parental control level but really it isn't a free string, it is one of the 5 choices (i.e. an Enum).
+The requirement is great, but that doesn't mean all classes should catch all exceptions and hide all error details,
+better that it bubble up the real error and gets fixed OR fix certain flaws like primative abuse; e.g. MovieService uses a string for the parental control level but really it isn't a free string, it is one of the 5 choices (i.e. an Enum). Of course then be failsafe at the application level and don't crash the UI or anthing but not necessarily a catch all at this level (one for discussion).
