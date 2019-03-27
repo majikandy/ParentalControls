@@ -1,5 +1,3 @@
-package andrewdavis;
-
 public enum ParentalControlLevelEnum {
     U ("U"),
     PG ("PG"),

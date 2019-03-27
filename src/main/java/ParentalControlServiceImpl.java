@@ -1,5 +1,3 @@
-package andrewdavis;
-
 public class ParentalControlServiceImpl implements ParentalControlService {
     private MovieService movieService;
 

@@ -1,5 +1,3 @@
-package andrewdavis;
-
 public interface MovieService {
     String getParentalControlLevel(String movieId)
             throws TitleNotFoundException,
