@@ -7,7 +7,6 @@ public class ParentalControlServiceImpl implements ParentalControlService {
 
     public MovieWatchableResult IsMovieWatchable(ParentalControlLevelEnum customerParentalControlLevelPreference, String movieId) throws MovieService.TitleNotFoundException {
         try {
-
             ParentalControlLevelEnum movieParentalControlLevel = ParentalControlLevelEnum.parse(this.movieService.getParentalControlLevel(movieId));
 
             if (movieParentalControlLevel.ordinal() <= customerParentalControlLevelPreference.ordinal()) {
@@ -15,7 +14,6 @@ public class ParentalControlServiceImpl implements ParentalControlService {
             }
 
             return MovieWatchableResult.UnWatchable(Reason.ParentalControlLevel);
-
         } catch (MovieService.TechnicalFailureException e) {
             return MovieWatchableResult.UnWatchable(Reason.TechnicalFailure);
         }

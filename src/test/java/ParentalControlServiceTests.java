@@ -203,7 +203,6 @@ public class ParentalControlServiceTests {
         and_reason_is(Reason.TechnicalFailure);
         // NOTE: We should have the code raise an event in the code if we are choosing to catch and wrap
         // so that it can be handled to fix the underlying cause of the problem
-        // (eg. How a movie is returning an unknown parental control level string for example)
     }
 
     @Test
