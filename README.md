@@ -2,7 +2,7 @@
 
 ## Scenario
 
-Sky is developing a next generation Video on Demand platform. You are
+The company is developing a next generation Video on Demand platform. You are
 part of a software engineering team, developing services for the platform
 and working on the story below.
 
@@ -13,11 +13,12 @@ have a higher parental control level than my current preference setting.
 Your team has partnered with the Movie Meta Data team that provides a
 service that can return parental control information for a given movie.
 
-Parental Control Levels
+## Parental Control Levels
 U, PG, 12, 15, 18
 
 
-Acceptance Criteria
+## Acceptance Criteria
+
 The following table describes the expected ParentalControlService result
 
 **It also describes the design decision of the implementation**
@@ -31,7 +32,7 @@ The following table describes the expected ParentalControlService result
 
 We need to ensure that we always failsafe.
 
-Design Decision : This service probably isn't the right place to catch all exceptions for logging/alerting -
+**Design Decision:** This service probably isn't the right place to catch all exceptions for logging/alerting -
 I would expect that to be closer to the top level client call and prefer all other Exceptions to bubble up.
 the requirement is great, but that doesn't mean all classes should catch all exceptions and hide all error details,
 better that it bubble up the real error and gets fixed OR fix certain flaws like primative abuse; e.g. MovieService uses a string for the parental control level but really it isn't a free string, it is one of the 5 choices (i.e. an Enum).
