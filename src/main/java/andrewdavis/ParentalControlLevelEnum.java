@@ -3,7 +3,9 @@ package andrewdavis;
 public enum ParentalControlLevelEnum {
     U ("U"),
     PG ("PG"),
-    Twelve ("12");
+    Twelve ("12"),
+    Fifteen("15"),
+    Eighteen("18");
 
     private String rating;
 

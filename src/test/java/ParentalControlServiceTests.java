@@ -8,21 +8,6 @@ public class ParentalControlServiceTests {
     private Exception caughtException;
 
     @Test
-    public void when_movie_PG_and_customer_level_is_PG_then_customer_CAN_watch_movie(){
-        given_movie_level_is("PG");
-        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.PG);
-        then_movie_CAN_be_watched();
-    }
-
-    @Test
-    public void when_movie_PG_and_customer_level_is_U_then_customer_CANNOT_watch_movie(){
-        given_movie_level_is("PG");
-        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.U);
-        then_movie_CANNOT_be_watched();
-        and_reason_is(Reason.ParentalControlLevel);
-    }
-
-    @Test
     public void when_movie_U_and_customer_level_is_U_then_customer_CAN_watch_movie(){
         given_movie_level_is("U");
         when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.U);
@@ -37,11 +22,175 @@ public class ParentalControlServiceTests {
     }
 
     @Test
+    public void when_movie_U_and_customer_level_is_12_then_customer_CAN_watch_movie(){
+        given_movie_level_is("U");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.Twelve);
+        then_movie_CAN_be_watched();
+    }
+
+    @Test
+    public void when_movie_U_and_customer_level_is_15_then_customer_CAN_watch_movie(){
+        given_movie_level_is("U");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.Fifteen);
+        then_movie_CAN_be_watched();
+    }
+
+    @Test
+    public void when_movie_U_and_customer_level_is_18_then_customer_CAN_watch_movie(){
+        given_movie_level_is("U");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.Eighteen);
+        then_movie_CAN_be_watched();
+    }
+
+    @Test
+    public void when_movie_PG_and_customer_level_is_U_then_customer_CANNOT_watch_movie(){
+        given_movie_level_is("PG");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.U);
+        then_movie_CANNOT_be_watched();
+        and_reason_is(Reason.ParentalControlLevel);
+    }
+
+    @Test
+    public void when_movie_PG_and_customer_level_is_PG_then_customer_CAN_watch_movie(){
+        given_movie_level_is("PG");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.PG);
+        then_movie_CAN_be_watched();
+    }
+
+    @Test
+    public void when_movie_PG_and_customer_level_is_12_then_customer_CAN_watch_movie(){
+        given_movie_level_is("PG");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.Twelve);
+        then_movie_CAN_be_watched();
+    }
+
+    @Test
+    public void when_movie_PG_and_customer_level_is_15_then_customer_CAN_watch_movie(){
+        given_movie_level_is("PG");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.Fifteen);
+        then_movie_CAN_be_watched();
+    }
+
+    @Test
+    public void when_movie_PG_and_customer_level_is_18_then_customer_CAN_watch_movie(){
+        given_movie_level_is("PG");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.Eighteen);
+        then_movie_CAN_be_watched();
+    }
+
+    @Test
+    public void when_movie_12_and_customer_level_is_U_then_customer_CANNOT_watch_movie(){
+        given_movie_level_is("12");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.U);
+        then_movie_CANNOT_be_watched();
+        and_reason_is(Reason.ParentalControlLevel);
+    }
+
+    @Test
     public void when_movie_12_and_customer_level_is_PG_then_customer_CANNOT_watch_movie(){
         given_movie_level_is("12");
         when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.PG);
         then_movie_CANNOT_be_watched();
         and_reason_is(Reason.ParentalControlLevel);
+    }
+
+    @Test
+    public void when_movie_12_and_customer_level_is_12_then_customer_CAN_watch_movie(){
+        given_movie_level_is("12");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.Twelve);
+        then_movie_CAN_be_watched();
+    }
+
+    @Test
+    public void when_movie_12_and_customer_level_is_15_then_customer_CAN_watch_movie(){
+        given_movie_level_is("12");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.Fifteen);
+        then_movie_CAN_be_watched();
+    }
+
+    @Test
+    public void when_movie_12_and_customer_level_is_18_then_customer_CAN_watch_movie(){
+        given_movie_level_is("12");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.Eighteen);
+        then_movie_CAN_be_watched();
+    }
+
+
+    @Test
+    public void when_movie_15_and_customer_level_is_U_then_customer_CANNOT_watch_movie(){
+        given_movie_level_is("15");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.U);
+        then_movie_CANNOT_be_watched();
+        and_reason_is(Reason.ParentalControlLevel);
+    }
+
+    @Test
+    public void when_movie_15_and_customer_level_is_PG_then_customer_CANNOT_watch_movie(){
+        given_movie_level_is("15");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.PG);
+        then_movie_CANNOT_be_watched();
+        and_reason_is(Reason.ParentalControlLevel);
+    }
+
+    @Test
+    public void when_movie_15_and_customer_level_is_12_then_customer_CANNOT_watch_movie(){
+        given_movie_level_is("15");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.Twelve);
+        then_movie_CANNOT_be_watched();
+        and_reason_is(Reason.ParentalControlLevel);
+    }
+
+    @Test
+    public void when_movie_15_and_customer_level_is_15_then_customer_CAN_watch_movie(){
+        given_movie_level_is("15");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.Fifteen);
+        then_movie_CAN_be_watched();
+    }
+
+    @Test
+    public void when_movie_15_and_customer_level_is_18_then_customer_CAN_watch_movie(){
+        given_movie_level_is("15");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.Eighteen);
+        then_movie_CAN_be_watched();
+    }
+
+    @Test
+    public void when_movie_18_and_customer_level_is_U_then_customer_CANNOT_watch_movie(){
+        given_movie_level_is("18");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.U);
+        then_movie_CANNOT_be_watched();
+        and_reason_is(Reason.ParentalControlLevel);
+    }
+
+    @Test
+    public void when_movie_18_and_customer_level_is_PG_then_customer_CANNOT_watch_movie(){
+        given_movie_level_is("18");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.PG);
+        then_movie_CANNOT_be_watched();
+        and_reason_is(Reason.ParentalControlLevel);
+    }
+
+    @Test
+    public void when_movie_18_and_customer_level_is_12_then_customer_CANNOT_watch_movie(){
+        given_movie_level_is("18");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.Twelve);
+        then_movie_CANNOT_be_watched();
+        and_reason_is(Reason.ParentalControlLevel);
+    }
+
+    @Test
+    public void when_movie_18_and_customer_level_is_15_then_customer_CANNOT_watch_movie(){
+        given_movie_level_is("18");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.Fifteen);
+        then_movie_CANNOT_be_watched();
+        and_reason_is(Reason.ParentalControlLevel);
+    }
+
+    @Test
+    public void when_movie_18_and_customer_level_is_18_then_customer_CAN_watch_movie(){
+        given_movie_level_is("15");
+        when_requesting_if_movie_allowed_for(ParentalControlLevelEnum.Eighteen);
+        then_movie_CAN_be_watched();
     }
 
     @Test
@@ -130,4 +279,3 @@ public class ParentalControlServiceTests {
         assert result.getReason() == reason;
     }
 }
-
